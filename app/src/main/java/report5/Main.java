@@ -2,14 +2,13 @@ package report5;
 
 public class Main {
     public static void main(String[] args){
+        String str = "壱百満";
         try{
-            String str = null;
-            System.out.println(str.length());
-        }catch(NullPointerException e){
-            System.out.println("NullPointerExceptionが発生した");
+            int value = Integer.parseInt(str);
+        }catch(NumberFormatException e){
+            System.out.println("NumberFormatExceptionが発生しました！");
             System.out.println(e.getMessage());
         }
-    
-
     }
 }
+
